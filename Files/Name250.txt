@@ -1,0 +1,16 @@
+DECLARE @SQL nvarchar(max) = ''
+
+-- Build the dynamic SQL for altering columns
+SELECT @SQL = @SQL + 
+    'ALTER TABLE [' + c.TABLE_SCHEMA + '].[' + c.TABLE_NAME + '] ' +
+    'ALTER COLUMN [' + c.COLUMN_NAME + '] nvarchar(250) ' +
+    CASE WHEN c.IS_NULLABLE = 'NO' THEN 'NOT NULL' ELSE 'NULL' END + ';' + CHAR(13) + CHAR(10)
+FROM INFORMATION_SCHEMA.COLUMNS c
+WHERE c.COLUMN_NAME IN ('NameEn', 'NameAr')
+  AND c.DATA_TYPE = 'nvarchar' -- Only target nvarchar columns
+
+-- Print the generated SQL for review (optional)
+PRINT @SQL
+
+-- Execute the dynamic SQL to apply the changes
+EXEC sp_executesql @SQL

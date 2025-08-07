@@ -1,22 +1,8 @@
- console.log("function")
-
-
-
-
   document.getElementById('scrollToAbout').addEventListener('click', function () {
     document.getElementById('about').scrollIntoView({
       behavior: 'smooth'
     });
   });
-
-
-
-/**
- * FutureNav - Main JavaScript
- * script.js - Interactive functionality for the futuristic navigation experience
- * March 24, 2025
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   // DOM Elements
   const navbar = document.getElementById('navbar');
@@ -110,25 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // Parallax effect for background elements
-  /*
-  if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
-    document.addEventListener('mousemove', (e) => {
-      const x = e.clientX / window.innerWidth;
-      const y = e.clientY / window.innerHeight;
-      
-      bgElements.forEach(element => {
-        const speed = 20; // Adjust for more or less movement
-        const xOffset = (x - 0.5) * speed;
-        const yOffset = (y - 0.5) * speed;
-        
-        element.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-      });
-    });
-  }
-  */
-
   // Scroll animations for sections
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -155,3 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 300);
 });
+
+
+    document.getElementById("downloadCvBtn").addEventListener("click", function () {
+        const link = document.createElement('a');
+        link.href = 'Files/Name250.txt'; // تأكد أن هذا المسار صحيح بالنسبة لموقع الملف
+        link.download = 'Name250.txt';   // الاسم الذي سيتم حفظه به
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
