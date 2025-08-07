@@ -529,3 +529,63 @@ a:focus, button:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #06b6d4, #6366f1);
 }
+.setionHome p {
+  text-align: start !important;
+}
+ .f5 {
+  font-size: 3rem !important; ;
+}
+
+
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid #fff;
+  animation:
+    typing 3s steps(30, end) forwards,
+    blink 0.7s step-end 3,
+    hideCursor 3.5s forwards;
+}
+
+/* تأثير الكتابة */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% } /* عدل حسب حجم النص */
+}
+
+/* تأثير الوميض */
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  10% { border-color: white }
+}
+
+/* إخفاء الكارِسر بعد انتهاء الكتابة */
+@keyframes hideCursor {
+  to {
+    border-color: transparent;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#scrollToAbout {
+  cursor: pointer;
+}

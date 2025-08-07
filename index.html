@@ -50,7 +50,7 @@
     <!-- Navigation Bar -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between my-auto">
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="relative mr-2">
@@ -62,13 +62,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent flex items-center">
+                    <div style="text-wrap: nowrap !important;" class="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent flex items-center">
                         Ahmed Adel
                     </div>
                 </div>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-1">
+                    <!-- Desktop Navigation -->
+ <div class="hidden md:flex items-center space-x-1">
                     <a href="#home" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Home</a>
                     <a href="#about" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">About</a>
                     <a href="#services" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Services</a>
@@ -82,8 +82,8 @@
                     </div>
                 </div>
 
-                <!-- Mobile Navigation Button -->
-                <div class="flex md:hidden">
+                    <!-- Mobile Navigation Button -->
+                    <div class="flex md:hidden">
                     <button id="mobile-menu-button" class="relative w-10 h-10 focus:outline-none group" aria-label="Toggle menu">
                         <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                             <span class="block h-0.5 w-5 bg-cyan-400 mb-1 transform transition duration-300 ease-in-out" id="line1"></span>
@@ -92,10 +92,10 @@
                         </div>
                     </button>
                 </div>
-            </div>
+                </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
+
+     <div id="mobile-menu" class="md:hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
                 <div class="pt-2 pb-4 space-y-1">
                     <a href="#home" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Home</a>
                     <a href="#about" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">About</a>
@@ -109,8 +109,28 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Main Content Sections -->
     <main>
@@ -124,35 +144,59 @@
                             Future of Navigation
                         </div> -->
                     </div>
-                    <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-8">
-                        Cutting-edge UI components designed for the next generation web interfaces
-                    </p>
-                    <div class="flex gap-4 flex-wrap justify-center">
-                        <div class="relative group">
-                            <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
-                            <button class="px-6 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95">
-                                <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Get Started</span>
-                            </button>
-                        </div>
-                        <button class="px-6 py-3 bg-transparent border border-cyan-500/30 rounded-lg text-cyan-400 text-base font-medium flex items-center justify-center gap-2 hover:bg-cyan-900/10 hover:border-cyan-500/50 transition-all duration-300">
-                            Download CV
 
-                            <a href="#" download 
-   class="w-8 h-8 rounded-full bg-indigo-900/50 flex items-center justify-center text-white hover:bg-indigo-800 transition-colors">
-    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M3 14a1 1 0 011 1v2h12v-2a1 1 0 112 0v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a1 1 0 011-1zm6-10a1 1 0 012 0v6.586l1.293-1.293a1 1 0 111.414 1.414l-3.414 3.414a1 1 0 01-1.414 0L6.293 11.707a1 1 0 111.414-1.414L9 11.586V4z" clip-rule="evenodd" />
-    </svg>
+<p id="" class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-8 setionHome">
+    <p class="f5 typewriter">Hi, I'm Ahmed Adel 👋 </p>
+ </p>
+<p class="fade-in delay-1"  style="margin: 0.5rem 0rem !important;">Full-Stack .NET & Angular Developer | Since 2021</p>
+<p class="fade-in delay-2" style="margin: 0.5rem 0rem !important;">I build modern, scalable web applications and APIs with a focus on performance, clean architecture, and real-world business needs.</p>
+<p class="fade-in delay-3" style="margin: 0.5rem 0rem !important;">🚢 Built enterprise shipping & logistics systems for Egyptian ports  </p>
+<p class="fade-in delay-3" style="margin: 0.5rem 0rem !important;">💼 Developed full ERP solutions (Accounting, Inventory, Dynamic Reporting, Auto Auditing) </p> 
+<p class="fade-in delay-3" style="margin: 0.5rem 0rem !important;">🍽️ Delivered POS apps for retail & restaurants with accounting integrations  </p>
+<p class="fade-in delay-3" style="margin: 0.5rem 0rem !important;">🌐 Created custom APIs & dashboards for various businesses</p>
+<p class="fade-in delay-3" style="margin: 0.5rem 0rem !important;">Ready to bring your next idea to life? Let’s connect.</p>
+
+
+
+
+<div class="flex gap-4 flex-wrap justify-center" style="margin-top: 1rem !important;">
+
+<div class="relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500">
+</div>                        
+<a href="tel:01032882094" class="phone-link" title="Call Me">
+<button class="px-6 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95">
+<span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
+Call Me  📞 <span>01032882094</span>
+</span>
+ </button>
 </a>
+</div>
 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </div>
+<button class="px-6 py-2 bg-transparent border border-cyan-500/30 rounded-lg text-cyan-400 text-base font-medium flex items-center justify-center gap-2 hover:bg-cyan-900/10 hover:border-cyan-500/50 transition-all duration-300">
+Download CV
+<a href="#" download class="w-8 h-8 rounded-full bg-indigo-900/50 flex items-center justify-center text-white hover:bg-indigo-800 transition-colors">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M3 14a1 1 0 011 1v2h12v-2a1 1 0 112 0v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a1 1 0 011-1zm6-10a1 1 0 012 0v6.586l1.293-1.293a1 1 0 111.414 1.414l-3.414 3.414a1 1 0 01-1.414 0L6.293 11.707a1 1 0 111.414-1.414L9 11.586V4z" clip-rule="evenodd" />
+</svg>
+</a>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="scrollToAbout" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce" >
+<svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+</svg>
+</div>
+
+
+
+
         </section>
 
         <!-- About Section -->
